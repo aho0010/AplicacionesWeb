@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* SOLO la tabla del horario */
+.horario {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+.horario th, 
+.horario td {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Colores por asignatura */
+.empleabilidad {
+    background-color: #b65f02;
+}
+.ingles {
+    background-color: #034183;
+}
+.programacion {
+    background-color: #022202;
+}
+.seguridad {
+    background-color: #d3089a;
+}
+.sistemas {
+    background-color: #af8d04;
+}
+.servicios {
+    background-color: #41047a;
+}
+.appweb {
+    background-color: #970808;
+}
+.proyecto {
+    background-color: #089ce6;
+}
