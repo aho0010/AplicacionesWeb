@@ -8,5 +8,7 @@
         var nuevo = document.createElement("p");
         var texto = document.createTextNode("texto desde JavaScript");
       
-        contenedor.appendChild(nuevo);
         nuevo.appendChild(texto);
+        contenedor.appendChild(nuevo);
+        nuevo.style.color = "blue"; 
+        
