@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  echo "Hola Mundo!!";?>
+    <?php echo "Hola Mundo!!";?>
     <?php include("include.php"); ?> 
 </body>
 </html>
