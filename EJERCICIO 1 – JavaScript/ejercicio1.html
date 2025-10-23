@@ -1,78 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Añadir comentarios a una lista</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-    }
-    #listaComentarios {
-      border: 1px solid #ccc;
-      padding: 10px;
-      background-color: #f5f5f5;
-      min-height: 50px;
-    }
-    #comentario {
-      width: 300px;
-      padding: 5px;
-    }
-    button {
-      padding: 6px 12px;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <h2>Añadir comentarios a una lista</h2>
-
-  <input type="text" id="comentario" placeholder="Escribe tu comentario aquí">
-  <button id="botonAgregar">Añadir</button>
-
-  <h3>Lista de comentarios:</h3>
-  <div id="listaComentarios"></div>
-
-  <script>
-
-    function agregarComentario() {
-      // coge el texto que se introduce
-      var texto = document.getElementById("comentario").value;
-
-      //  comprueba si esta vacío
-      if (texto.trim() === "") {
-        alert("Por favor, escribe un comentario antes de añadirlo.");
-        return;// sale si no se escribe nada
-      }
-
-      //  Crear un nuevo elemento <p>
-      var nuevoParrafo = document.createElement("p");
-
-      //  Crear un nodo de texto con el contenido escrito
-      var nodoTexto = document.createTextNode(texto);
-
-      //  Añadir el nodo de texto al párrafo
-      nuevoParrafo.appendChild(nodoTexto);
-
-      // Aplicar estilo al nuevo comentario
-      nuevoParrafo.style.color = "blue";
-
-      //  Obtener el contenedor de comentarios
-      var contenedor = document.getElementById("listaComentarios");
-
-      //  fondo del contenedor
-      contenedor.style.backgroundColor = "#e0e0e0";
-
-      //  Añade lo que hemos escrito en el contenedor
-      contenedor.appendChild(nuevoParrafo);
-
-      //  Limpiar el campo principal
-      document.getElementById("comentario").value = "";
-    }
-
-    // --- Se asigna movimiento al botón---
-    document.getElementById("botonAgregar").onclick = agregarComentario;
-  </script>
+    
 </body>
 </html>
